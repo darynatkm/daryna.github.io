@@ -1,0 +1,26 @@
+
+td {
+    border-style: solid;
+    border-width: 2px;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+table {
+    border-color: Blue;
+    color: white;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 5px;
+    padding: 2px;
+}
+
+.cell {
+    background-color: blueviolet;
+    
+
+}
+.empty {
+    background-color: white;
+}
