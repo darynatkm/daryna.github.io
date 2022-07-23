@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <!-- onload="document.registration.name.focus()" -->
+    <h1>Registration form</h1>
+    <form name="registration" onsubmit="return formValidation();">
+        <div>
+            <label for="name"> Full Name:</label>
+            <input type="text" id="name" size="60" name="name" />
+        </div>
+        <br />
+        <div>
+            <label for="age"> Age:</label>
+            <input type="number" name="age" id="age"/>
+        </div>
+        <br />
+        <div>
+            <label for="birth date"> Birth Date:</label>
+            <input type="date" name="bdate" id="bdate"/>
+        </div>
+        <br />
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" size="60" name="address" />
+        </div>
+        <br />
+        <div>
+            <label for="E-mail" l>Email:</label>
+            <input type="text" id="email" size="60" name="email" />
+        </div>
+        <br />
+        <div>
+            <label for="password">Password:</label>
+            <input type="text" id="password" size="60" name="password" />
+        </div>
+        <br />
+        <div>
+            <label for="Telephone">Telephone number: </label>
+            <input type="tel" id="tel" size="60" name="tel" />
+        </div>
+        <br />
+        <div>
+            <label for="gender">Gender: </label>  
+            <input type="radio" id="genderm" name="gender" value="male"/>Male  
+            <input type="radio" id="genderf" name="gender" value="female"/>Female <br/>  
+        </div>
+        <br />
+        <div>
+            <label>Choose your programming language</label>
+            <select type="text" value="" name="Sujet" required>
+                <option></option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>PHP</option>
+                <option>JavaScript</option>
+            </select>
+        </div>
+        <br />
+        <div>
+            <label for="comment">Comments: </label>
+            <textarea cols="62" id="comment" rows="10" name="comment"></textarea>
+        </div>
+        <br />
+        <div>
+            <label for="check">Agree with terms</label>
+            <input type="checkbox" id="check" name="terms" required/>
+        </div>
+        <br />
+        <div class="buttons" style="display: flex; flex-direction: row; gap: 20px">
+            <input type="submit" value="Send" name="send" />
+            <input type="reset" value="Reset" name="Reset" />
+        </div>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
