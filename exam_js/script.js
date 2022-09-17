@@ -70,7 +70,7 @@ const selectCategory = (event) => {
 
 
 // get random joke
-const fetchRandomJoke = () => {
+const getRandomJoke = () => {
 
     // assign selected type of joke for the final submission
     selectedTypeOfJoke = 'random'
@@ -106,7 +106,7 @@ const displaySearch = () => {
 }
 
 // fetch joke 
-const getJoke = () => {
+const fetchJoke = () => {
 
     query = searchbar.value;
 
@@ -194,11 +194,18 @@ const unlikeJoke = (event) => {
     event.hidden = true;
     event.previousElementSibling.hidden = false;
     localStorage.removeItem(event.parentNode.className);
-    location.reload();
-    document.querySelector(`.jokes > .${event.parentNode.className} > div > .fullHeart`).hidden = true;
-    document.querySelector(`.jokes > .${event.parentNode.className} > div > .emptyHeart`).hidden = false;
+    // location.reload();
+    try {
+        document.querySelector(`.jokes > .${event.parentNode.className} > div > .fullHeart`).hidden = true;
+        document.querySelector(`.jokes > .${event.parentNode.className} > div > .emptyHeart`).hidden = false;
+    }
+    catch(e) {
+        updateFavorites();
+    }
+    updateFavorites();
 
-    updateFavorites()
+
+
 
 }
 

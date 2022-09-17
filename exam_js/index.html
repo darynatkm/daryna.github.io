@@ -23,7 +23,7 @@
             <div class="jokeSelection">
                 <div name="jokeSelection" id="jokeSelection">
                     <div>
-                        <input type="radio" id="randomJoke" name="joke" value="Random" onclick="fetchRandomJoke()">
+                        <input type="radio" id="randomJoke" name="joke" value="Random" onclick="getRandomJoke()">
                         <label for="Random">Random</label>
                     </div>
                     <div id="categories">
@@ -36,7 +36,7 @@
                         <br>
                     </div>
                 </div>
-                <button id="getJoke" onclick="getJoke()">Get a joke</button>
+                <button id="getJoke" onclick="fetchJoke()">Get a joke</button>
             </div>
             <div id="displayJoke">
             </div>     
