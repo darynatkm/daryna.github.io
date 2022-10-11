@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body onload="setUp()">
+    <div class="container">
+        <div class="header">
+            <h2><a href="wishlist.html">Watch List</a></h2>
+            <a href=""><h1>Popular Movies</h1></a>
+            <div class="searchBarBlock">
+                <!-- <label for="">Search</label> -->
+                <input type="text" id="searchBar" placeholder="type title...">
+                <img onclick="setUp()" src="search.png" alt="search" width="20" height="20">
+            </div>
+        </div> 
+        <div id="filmGrid">
+        </div> 
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <a href="index.html" style="text-decoration: underline; font-size: 15px; margin-left: 20px;">Go to main page</a>
+                <div id="movieDetails">                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
