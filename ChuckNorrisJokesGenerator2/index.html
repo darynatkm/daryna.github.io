@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Khula:wght@300&display=swap" 
+        rel="stylesheet">
+    <title>Chuck Norris Jokes</title>
+    <script src="https://kit.fontawesome.com/52fd4b3de4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftPart">
+            <div class="title">
+                <h1>MSI 2020</h1>
+            </div>
+            <div class="intro">
+                <h2>Hey!</h2>
+                <h3>Let's try to find a joke for you</h3>
+            </div>
+            <div class="jokeSelection">
+                <div name="jokeSelection" id="jokeSelection">
+                    <div>
+                        <input type="radio" id="randomJoke" name="joke" value="Random">
+                        <label for="Random">Random</label>
+                    </div>
+                    <div id="categories">
+                        <input type="radio" id="categoryJoke" name="joke" value="From categories" >
+                        <label for="categoryJoke">From categories</label>
+                    </div>
+                    <div id="search">
+                        <input type="radio" id="searchJoke" name="joke" value="Search">
+                        <label for="searchJoke">Search</label>
+                        <br>
+                    </div>
+                </div>
+                <button id="getJoke">Get a joke</button>
+            </div>
+            <div id="displayJoke">
+            </div>     
+                 
+        </div>
+        <div class="rightPart" style="float: right;">
+            <div class="favTitleBlock">
+                <img src="img/favon.svg" id="favon" width="20px" height="20px" alt="favorites">
+                <h2 class="favTitle">Favourite</h2>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="favTitleBlock">
+                        <img src="img/favoff.svg" id="favoff"  class="close" width="20px" height="20px" alt="favorites">
+                        <h2 class="favTitle">Favourite</h2>
+                    </div>
+                    <div id="favJokes" ></div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+
+<script type="module" src="script.js"></script>
+</html>

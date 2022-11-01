@@ -1,0 +1,292 @@
+* {
+    font-family: 'Khula', sans-serif;
+    font-size: 15px;
+
+}
+
+h1 {
+    color:  #333333;
+    font-weight:900;
+    font-size: 20px;
+}
+
+h2 {
+    color:  #333333;
+    font-weight:900;
+    font-size: 32px;
+    margin-top: 72px;
+    line-height: 0px;
+}
+
+h3 {
+    line-height: 1;
+}
+
+.likeBtn {
+    border: none;
+    background-color: #F8F8F8;
+    float: right;
+    margin: 15px;
+}
+
+  
+/* On desktops */
+@media screen and (min-width: 825px) {
+body {
+    margin-left: 140px;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+.rightPart {
+    background-color: #F8F8F8;
+}
+
+#favon, #favoff {
+    display: none;
+}
+
+.jokeTile {
+    width: 500px; 
+}
+
+.modal-content > .favTitleBlock > .favTitle {
+    display: none;
+}
+
+#favJokes > div > div  {
+
+    width: 90%; 
+    background-color: #FFFFFF;
+    margin-left: 5%;
+    height: 17%; 
+    border-radius: 1%;
+
+}
+}
+
+/* On tablets */
+@media screen and (min-width: 415px) and (max-width: 824px) {
+body {
+    margin-left: 40px;
+}
+
+#favon {
+    display: block;
+}
+
+#favoff {
+    display: none;
+}
+
+.favTitleBlock {
+    float: right;
+    margin-right: 10%;
+    align-self: flex-end;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+ 
+
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #F8F8F8;
+padding: 20px;
+border: 1px solid #888;
+width: 60%;
+float: right;
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.jokeTile {
+    width: 350px; 
+}   
+
+#favJokes  {
+
+    background-color: #FFFFFF;
+    border-radius: 1%; 
+}
+
+}
+
+
+/* On smartphones */
+@media screen and (max-width: 414px) {
+body {
+    margin-left: 20px;
+}
+
+#favon {
+    display: block;
+}
+
+#favoff {
+    display: none;
+}
+
+.favTitleBlock {
+    float: right;
+    margin-right: 10%;
+    align-self: flex-end;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+    
+/* Modal Content/Box */
+.modal-content {
+background-color: #F8F8F8;
+padding: 20px;
+border: 1px solid #888;
+width: 100%;
+float: right;
+height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.jokeTile {
+    width: auto;
+}
+
+#favJokes > div > div  {
+
+    background-color: #FFFFFF;
+    border-radius: 1%; 
+}
+
+
+}
+
+
+.btn-category {
+    background-color: white;
+    font-size: 12px;
+    border: 2px solid #F8F8F8;
+    font-size: 12px;
+    color: #ABABAB;
+
+}
+
+
+.selectedCategory {
+    font-weight: bold;
+    background-color: #F8F8F8;
+    color:  #333333;
+}
+
+
+#searchbar {
+    margin-top: 10px;
+    width: 59%;
+    border: 2px solid #333333;
+    border-radius: 1%;
+
+}
+
+#getJoke {
+    background-color: #8EA7FF;
+    height: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+} 
+
+.jokeTile {
+    height: 17%; 
+    background-color: #F8F8F8;
+    border-radius: 1%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+.rightPart {
+    float: right; 
+    width: 40%;
+    height: 100vh;
+
+}
+
+
+.favTitleBlock {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 5%;
+    gap: 10px;
+
+}
+.favTitle {
+    font-size: 20px;
+    color: #ABABAB;
+    font-weight: 900;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
