@@ -48,11 +48,3 @@ The app is created with Chuck Norris Jokes Generator API to display jokes chosen
 Daryna Tokmachova  - darynatokmachova@gmail.com
 
 Project Link: [https://github.com/darynatkm/ChuckNorrisJokesGenerator](https://github.com/darynatkm/ChuckNorrisJokesGenerator)
-
-
-
-
-
-
-
-
